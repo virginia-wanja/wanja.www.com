@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <title> All products - Fashion chingu</title>
+   <link rel="stylesheet" href="style .css">
+</head>
+<body>
+
+<div class="header">
+<div class="container">
+<div class="navbar">
+<div class="logo">
+  <a href="Account.html"><img src="file:///C:/Users/san/Pictures/Images/31530356_bird_2.jpg" width="125px" height="60px"></a>
+</div>
+<nav>
+  <ul>
+     <li><a href="index.html">Home</a></li>
+     <li><a href="product .html">Product</a></li>
+     <li><a href="">About</a></li>
+     <li><a href="">Contacts</a></li>
+     <li><a href="Account.html">Account</a></li>
+  </ul>
+</nav>
+<a href="cart.html"><img src="file:///C:/Users/san/Pictures/Images/cart.png" width="30px" height="30px"></a>
+</div>
+</div>
+</div>
+<!-----account-page----->
+<div class="account-page">
+    <div class="container">
+        <div class="row">
+            <div class="col-2">
+                <img src="file:///C:/Users/san/Pictures/download.webp" width="100%">  
+            </div>
+            <div class="col-2">
+              <div class="form-container"> 
+                <div class="form-btn">
+                  <span onclick="login()">Login</span>
+                  <span onclick="register()">Register</span>
+                  <hr id="Indicator">
+                </div>
+                <form id="LoginForm">
+                  <input type="text" placeholder="Username">
+                  <input type="password" placeholder="Password">
+                  <button type="submit" class="btn">Login</button>
+                  <a href="">Forgot password</a>
+                </form>
+
+                <form id="RegForm">
+                  <input type="text" placeholder="Username">
+                  <input type="email" placeholder="Email">
+                  <input type="password" placeholder="Password">
+                  <button type="submit" class="btn">Register</button>
+                </form>
+              </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!---footer----->
+<div class="footer">
+  <div class="container">
+     <div class="row">
+        <div class="footer-col-1">
+           <h3>download our app</h3>
+           <p>download App for amdroid and ios mobile phone.</p>
+        </div>
+        <div class="footer-col-2">
+           <h3>follow us</h3>
+           <ul>
+              <li>facebook</li>
+              <li>instagram</li>
+              <li>twitter</li>
+              <li>youtube</li>
+           </ul>
+        </div>
+     </div>
+  </div>
+</div>
+<!-----js for toggle Form---->
+<script>
+  var LoginForm = document.getElementById("LoginForm");
+var RegForm = document.getElementById("RegForm");
+var Indicator = document.getElementById("Indicator");
+
+   function register(){
+
+       RegForm.style.transform = "translateX(0px)";
+       LoginForm.style.transform = "translateX(0px)";
+       Indicator.style.transform = "translateX(100px)";
+   }
+
+   function login(){
+
+       RegForm.style.transform = "translateX(300px)";
+       LoginForm.style.transform = "translateX(300px)";
+       Indicator.style.transform = "translateX(0px)";
+   }
+</script>
+
+</body>
+</html>
